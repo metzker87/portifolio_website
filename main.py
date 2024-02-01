@@ -154,6 +154,16 @@ def main(page: Page):
         )
         _social_button.content.controls.append(_icon)
 
+    _test_icons = Container(
+        content=Row(
+            alignment=alignment.center,
+            controls=[
+                Icon(name=icons.FACEBOOK, color=colors.WHITE, size=30),
+                Icon(name=icons.TIKTOK_OUTLINED, color=colors.WHITE, size=30),
+                Icon(name=icons.SHARE_SHARP, color=colors.WHITE, size=30),
+            ]
+        )
+    )
 
     _icon_container = Container(
         width=145, 
@@ -163,7 +173,7 @@ def main(page: Page):
         content=Column(
             spacing=0,
             controls=[
-                _social_button,
+                _test_icons,
             ],
         ),
     )
