@@ -17,7 +17,7 @@ def main(page: Page):
         else:
             _nav.controls[0].visible = True
             _nav.update()
-            _min_nav.controls.visible = True
+            _min_nav.controls.visible = False
             _min_nav.update()
 
     # hover of nav items
